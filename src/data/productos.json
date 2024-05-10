@@ -24,7 +24,7 @@
       "color": "White/Blue"
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Striped Shirt",
       "imageSrc": "../public/Hor1.jpg",
       "imageAlt": "Front of men's Striped Shirt.",
@@ -32,7 +32,7 @@
       "color": "White/Blue"
     },
     {
-      "id": 3,
+      "id": 5,
       "name": "Striped Shirt",
       "imageSrc": "../public/teh2.jpg",
       "imageAlt": "Front of men's Striped Shirt.",

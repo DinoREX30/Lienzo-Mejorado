@@ -1,8 +1,14 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useContext } from 'react'
+import { CiShoppingCart } from "react-icons/ci";
+import { ShoppingCartContext } from '../../Context'
 
 export default function Navbar() {
+
+    const context = useContext(ShoppingCartContext)
     const activeStyle = "underline underline-offset-4"
+
+
   return (
     <nav className='flex justify-between items-center fixed w-full py-4 px-8 z-10 text-sm font-thin top-0'>
         <ul className='flex items-center gap-5'>
@@ -86,14 +92,9 @@ export default function Navbar() {
                     SIGN IN
                 </NavLink>
             </li>
-            <li>
-                <NavLink 
-                to='/'
-                className={({ isActive }) => 
-                isActive ? activeStyle : undefined
-                }>
-                    CARRITO
-                </NavLink>
+            <li className='flex items-center gap-2'>
+                <CiShoppingCart className='h-6 w-6' />
+                {context.count}
             </li>
         </ul>
     </nav>
