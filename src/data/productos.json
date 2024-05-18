@@ -2,7 +2,7 @@
     {
       "id": 1,
       "name": "Basic Tee",
-      "imageSrc": "../public/almala.jpg",
+      "imageSrc": "/almala.jpg",
       "imageAlt": "Front of men's Basic Tee in black.",
       "price": "$35",
       "color": "Black"
@@ -10,31 +10,31 @@
     {
       "id": 2,
       "name": "Denim Jacket",
-      "imageSrc": "../public/Blan1.jpg",
+      "imageSrc": "/Blan1.jpg",
       "imageAlt": "Front of men's Denim Jacket.",
       "price": "$65",
       "color": "Blue"
     },
     {
       "id": 3,
-      "name": "Striped Shirt",
-      "imageSrc": "../public/Flor2.jpg",
+      "name": "vsnvjksd",
+      "imageSrc": "/Flor2.jpg",
       "imageAlt": "Front of men's Striped Shirt.",
       "price": "$40",
       "color": "White/Blue"
     },
     {
       "id": 4,
-      "name": "Striped Shirt",
-      "imageSrc": "../public/Hor1.jpg",
-      "imageAlt": "Front of men's Striped Shirt.",
+      "name": "laalala",
+      "imageSrc": "/Hor1.jpg",
+      "imageAlt": "/Hor1.jpg",
       "price": "$40",
       "color": "White/Blue"
     },
     {
       "id": 5,
-      "name": "Striped Shirt",
-      "imageSrc": "../public/teh2.jpg",
+      "name": "bebebe",
+      "imageSrc": "/teh2.jpg",
       "imageAlt": "Front of men's Striped Shirt.",
       "price": "$40",
       "color": "White/Blue"

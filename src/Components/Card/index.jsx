@@ -6,9 +6,14 @@ import { ShoppingCartContext } from '../../Context'
 const Card = () => {
     const context = useContext(ShoppingCartContext)
     const showProduct = (product) => {
-        console.log(product)
         context.openProductDetail()
         context.setProductToShow(product)
+    }
+
+    const addProductsToCar = (productData) => {
+        context.setCount(context.count + 1)
+        context.setCartToProducts([...context.cartProducts, productData])
+        console.log('Cart: ', context.cartProducts)
     }
     
     return (
@@ -16,7 +21,7 @@ const Card = () => {
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 z-20">
             <h2 className="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
 
-            <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8" onClick={() => showProduct(products)}>
+            <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {products.map((product) => (
                 <div key={product.id} className="group relative" onClick={() => showProduct(product)}>
                     <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
@@ -40,7 +45,7 @@ const Card = () => {
                     </div>
                     <div 
                         className=' bg-black text-white rounded-md  my-2 z-10 cursor-pointer relative text-center flex justify-center p-1'
-                        onClick={() => context.setCount(context.count + 1)}>
+                        onClick={() => addProductsToCar(product)}>
                         <FaPlus className=' text-center flex justify-center'/>
                     </div>
                 </div>
