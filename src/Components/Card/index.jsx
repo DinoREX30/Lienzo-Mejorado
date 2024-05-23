@@ -5,14 +5,19 @@ import { ShoppingCartContext } from '../../Context'
 
 const Card = () => {
     const context = useContext(ShoppingCartContext)
+
+
     const showProduct = (product) => {
         context.openProductDetail()
         context.setProductToShow(product)
     }
 
-    const addProductsToCar = (productData) => {
+    const addProductsToCar = (event, productData) => {
+        event.stopPropagation()
         context.setCount(context.count + 1)
-        context.setCartToProducts([...context.cartProducts, productData])
+        context.setCartProducts([...context.cartProducts, productData])
+        context.openCheckoutSideMenu()
+        context.closeProductDetail()
         console.log('Cart: ', context.cartProducts)
     }
     
@@ -45,7 +50,7 @@ const Card = () => {
                     </div>
                     <div 
                         className=' bg-black text-white rounded-md  my-2 z-10 cursor-pointer relative text-center flex justify-center p-1'
-                        onClick={() => addProductsToCar(product)}>
+                        onClick={(event) => addProductsToCar(event, product)}>
                         <FaPlus className=' text-center flex justify-center'/>
                     </div>
                 </div>
