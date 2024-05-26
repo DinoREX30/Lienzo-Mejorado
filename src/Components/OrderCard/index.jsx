@@ -3,7 +3,7 @@ import { FaRegTrashAlt } from "react-icons/fa";
 
 const OrderCard = props => {
 
-    const { imageSrc, price, name } = props
+    const { imageSrc, price, name, handleDelete, id } = props
 
 
     return (
@@ -16,7 +16,7 @@ const OrderCard = props => {
             </div>
             <div className="flex items-center gap-2">
                 <p className="text-lg font-thin">{price}</p>
-                <FaRegTrashAlt className='w-4 h-4 cursor-pointer'/>
+                <FaRegTrashAlt onClick={() => handleDelete(id)} className='w-4 h-4 cursor-pointer'/>
             </div>
         </div>
     )
