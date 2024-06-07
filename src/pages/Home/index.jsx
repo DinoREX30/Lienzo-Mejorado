@@ -1,14 +1,13 @@
 import React from 'react'
 import Layout from '../../Components/Layout'
-import Card from '../../Components/Card'
-import ProductDetail from '../../Components/ProductDetail'
+import Carousel from '../../Components/Carousel'
+import AnimatedText from '../../Components/AnimatedText'
 
 export default function Home() {
   return (
     <Layout>
-      Home
-      <Card/>
-      <ProductDetail/>
+      <Carousel/>
+      <AnimatedText/>
     </Layout>
   )
 }

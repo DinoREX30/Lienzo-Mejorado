@@ -15,7 +15,7 @@ const Card = () => {
 
     const addProductsToCar = (event, productData) => {
         event.stopPropagation()
-        context.setCount(context.count + 1)
+       context.setCount(context.count + 1)
         context.setCartProducts([...context.cartProducts, productData])
         context.openCheckoutSideMenu()
         context.closeProductDetail()
@@ -28,7 +28,7 @@ const Card = () => {
 
         if(isInCart) {
             return (
-                <div className=' bg-black text-white rounded-md  my-2 z-10 cursor-pointer relative text-center flex justify-center p-1'>
+                <div className=' bg-white text-black border-2 border-black rounded-md  my-2 z-10 cursor-pointer relative text-center flex justify-center p-1'>
                     <MdDone className=' text-center flex justify-center'/>
                 </div>
             )
@@ -67,7 +67,7 @@ const Card = () => {
                                 </h3>
                                 <p className="mt-1 text-sm text-gray-500">{product.color}</p>
                             </div>
-                            <p className="text-sm font-medium text-gray-900">{product.price}</p>
+                            <p className="text-sm font-medium text-gray-900">${product.price}</p>
                         </div>
                         {renderIcon(product)}
                     </div>

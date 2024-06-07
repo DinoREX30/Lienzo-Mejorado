@@ -24,7 +24,7 @@ export default function ProductDetail() {
               )}
             </figure>
             <p className='flex flex-col text-center my-16 font-thin'>
-              <span className='my-4'>{price}</span>
+              <span className='my-4'>${price}</span>
               <span className='my-4'>{name}</span>
               <span className='my-4'>{color}</span>
             </p>

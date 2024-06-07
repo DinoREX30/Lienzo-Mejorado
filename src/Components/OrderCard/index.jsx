@@ -15,7 +15,7 @@ const OrderCard = props => {
                 <p className=" font-thin text-md ">{name}</p>
             </div>
             <div className="flex items-center gap-2">
-                <p className="text-lg font-thin">{price}</p>
+                <p className="text-lg font-thin">${price}</p>
                 <FaRegTrashAlt onClick={() => handleDelete(id)} className='w-4 h-4 cursor-pointer'/>
             </div>
         </div>

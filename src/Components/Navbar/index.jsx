@@ -94,7 +94,7 @@ export default function Navbar() {
             </li>
             <li className='flex items-center gap-2'>
                 <CiShoppingCart className='h-6 w-6' />
-                {context.count}
+                {context.cartProducts.length}
             </li>
         </ul>
     </nav>

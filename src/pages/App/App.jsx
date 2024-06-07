@@ -6,6 +6,7 @@ import MyOrder from '../MyOrder'
 import MyOrders from '../MyOrders'
 import NotFound from '../NotFound'
 import SignIn from '../SignIn'
+import Vestidos from '../Vestidos'
 import Navbar from '../../Components/Navbar'
 import CheckoutSideMenu from '../../Components/CheckoutSideMenu'
 import './App.css'
@@ -14,7 +15,9 @@ const AppRoutes = () => {
   let routes = useRoutes([
     { path: '/', element: <Home/> },
     { path: '/my-order', element: <MyOrder/> },
+    { path: '/vestidos', element: <Vestidos/> },
     { path: '/my-orders', element: <MyOrders/> },
+    { path: '/my-orders/last', element: <MyOrder/> },
     { path: '/my-account', element: <MyAccount/> },
     { path: '/sign-in', element: <SignIn/> },
     { path: '/*', element: <NotFound/> }
