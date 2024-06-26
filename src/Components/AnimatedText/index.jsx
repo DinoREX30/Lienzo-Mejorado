@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { useTransition, animated } from '@react-spring/web';
 
-import styles from './style.module.css'; // Asegúrate de que este archivo existe
+import styles from './style.module.css'; 
 
 export default function AnimatedText() {
   const ref = useRef([]);

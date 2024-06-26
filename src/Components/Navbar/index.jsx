@@ -10,7 +10,7 @@ export default function Navbar() {
 
 
   return (
-    <nav className='flex justify-between items-center fixed w-full py-4 px-8 z-10 text-sm font-thin top-0'>
+    <nav className='flex justify-between items-center fixed w-full py-4 px-20 z-10 text-sm font-thin top-0'>
         <ul className='flex items-center gap-5'>
             <li>
                <img src="../public/lienzoLogo.png" alt="Lienzo" className='h-10 w-10'/>
